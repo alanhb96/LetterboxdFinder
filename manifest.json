@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Letterboxd Search",
+    "version": "2.2.3",
+    "description": "Fast search movies on Letterboxd",
+  
+    "permissions": ["storage", "activeTab"],
+    
+    "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+    },
+  
+    "icons": {
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
