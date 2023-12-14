@@ -20,11 +20,36 @@ body {
   }
   
   button {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
     color: rgb(245, 245, 245);
     background-color: #ff8000;
     border-radius: 28px;
     width: 30%;
     height: 35px;
+  }
+
+  #suggestionsList {
+    justify-content:end;
+    align-items: end;
+    max-height: 75px;
+    width:80%;
+    overflow-y: auto;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 32px;
+    color:white;
+    background-color:#1c1f22;
+  }
+  
+  #suggestionsList li {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  #suggestionsList li:hover {
+    background-color: #2c2e30;
   }
